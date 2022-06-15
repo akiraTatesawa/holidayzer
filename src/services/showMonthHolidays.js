@@ -1,4 +1,4 @@
-import { holidays } from "./holidays.js";
+import { holidays } from "../holidays.js";
 
 export function showMonthHolidays(idMonth) {
   const monthCode = `${idMonth}/`;

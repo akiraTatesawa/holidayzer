@@ -1,7 +1,7 @@
 import express from "express";
 
 import { checkIfTodayIsHoliday } from "./services/checkIfTodayIsHoliday.js";
-import { holidays } from "./services/holidays.js";
+import { holidays } from "./holidays.js";
 import { showMonthHolidays } from "./services/showMonthHolidays.js";
 
 const app = express();
