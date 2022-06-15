@@ -7,6 +7,6 @@ export function showMonthHolidays(idMonth) {
   );
 
   return monthHolidays.length === 0
-    ? "Não há feriados nesse mês"
+    ? "Nada para ver por aqui..."
     : monthHolidays;
 }
