@@ -1,7 +1,4 @@
-import express from "express";
-import { checkIfTodayIsHoliday } from "./checkIfTodayIsHoliday";
-
-const holidays = [
+export const holidays = [
   { date: "1/1/2022", name: "Confraternização mundial" },
   { date: "1/3/2022", name: "Carnaval" },
   { date: "4/17/2022", name: "Páscoa" },
@@ -14,15 +11,3 @@ const holidays = [
   { date: "11/15/2022", name: "Proclamação da República" },
   { date: "12/25/2022", name: "Natal" },
 ];
-
-const app = express();
-
-app.get("/holidays", (_req, res) => {
-  res.send(holidays);
-});
-
-app.get("/is-today-holiday", () => {
-  checkIfTodayIsHoliday();
-});
-
-app.listen(3333);

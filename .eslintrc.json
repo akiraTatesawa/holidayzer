@@ -15,8 +15,24 @@
         "sourceType": "module"
     },
     "rules": {
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "always"
+            }
+        ],
         "prettier/prettier": "error",
         "import/prefer-default-export": "off",
         "no-console": "off"
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [
+                    ".js"
+                ]
+            }
+        }
     }
 }
