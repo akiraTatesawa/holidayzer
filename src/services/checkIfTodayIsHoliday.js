@@ -1,4 +1,6 @@
-export function checkIfTodayIsHoliday(holidays) {
+import { holidays } from "./holidays.js";
+
+export function checkIfTodayIsHoliday() {
   const todayDate = new Date();
   const todayString = todayDate.toLocaleDateString("en-US");
 
